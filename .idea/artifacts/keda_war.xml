@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="keda:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="keda-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="keda:war exploded" />
+    </root>
+  </artifact>
+</component>

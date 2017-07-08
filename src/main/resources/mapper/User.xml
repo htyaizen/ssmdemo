@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.UserDao">
+    <!--select 的id就是接口的方法名  parameterType参数类型  resultType返回值类型-->
+    <select id="queryAllUser"
+            resultType="com.beans.UserPojo">
+        select * from UserBean
+    </select>
+
+    <select id="queryUser"
+            parameterType="string"
+            resultType="com.beans.UserPojo">
+        select * from UserBean WHERE userName = #{userName}
+    </select>
+
+    <insert id="insertUserBean"
+            parameterType="com.beans.UserPojo">
+        insert into UserBean(
+        userName,
+        password,
+        age)
+        values
+        (#{userName},#{password},
+        #{age})
+    </insert>
+</mapper>

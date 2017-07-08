@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" type="text/javascript" src="reset.js">
+    </script>
+</head>
+<body>
+<!--设置描点-->
+<a name="top"></a>
+Hello World
+<!--标题元素-->
+<div style="color: aquamarine">
+    <h1>title1</h1>
+    <!--段落元素,<br/换行元素-->
+    <p align="left">段落元素</p>
+    <p align="left">段落
+        <span style="color: coral">元素2
+        </span>
+    </p>
+</div>
+<div align="center">
+    <img src="images/hee.png" width="320" height="240"/>
+    <div align="center">
+        <a href="http://www.baidu.com">点击百度</a>
+    </div>
+</div>
+<!--有序列表-->
+<ul>
+    <li>title1</li>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <!--无序列表-->
+    <li>title2</li>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+</ul>
+<table align="center" width="400" style="color: darkcyan;">
+    <thead align="center">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>年龄</td>
+    </tr>
+    </thead>
+    <tbody align="center">
+    <tr>
+        <td>周科达</td>
+        <td>男</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>呵呵</td>
+        <td>女</td>
+        <td>22</td>
+    </tr>
+    </tbody>
+</table>
+<form>姓名
+    <input id="name_text"
+           name="name_text" value="周科达" width="80" height="100" type="text" align="center">
+</form>
+<form>性别
+    <input id="sex_text" name="sex_text" value="男" width="80" height="100" type="text" align="center">
+</form>
+<form>
+    <input name="commit" value="提交" width="80" height="100" type="button"
+           align="center">
+    <input id="reset" name="reset" value="重置" width="80" height="100"
+           type="button" align="center" onclick="reSet()">
+    <input id="num" name="num" width="80" height="100"
+           type="text" align="center" readonly="readonly">
+</form>
+<script>
+    end();
+</script>
+<!--实现描点-->
+<a href="#top">返回最顶端</a>
+</body>
+</html>
